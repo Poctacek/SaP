@@ -1,2 +1,3 @@
 # SaP
 My father's web
+Making a website for my father's little drywalling company, he used to have one on a free hosting website but that was like 5 years ago and that has since been shut down. I want to give it to him as a present for his birthday and I will be translating it to Czech after...
