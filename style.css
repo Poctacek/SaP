@@ -36,11 +36,33 @@ body {
 }
 
 .navbar-logo {
-    color: #f2e9e4;
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-left: 35px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar-logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  border-radius: 7px; /* Optional: for rounded corners */
+  background: #fff0; /* transparent background */
+
+  margin-left: 20px;
+}
+.navbar-brand-text {
+  color: #f2e9e4;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  /* Remove margin-left if using flex gap */
+}
+@media (max-width: 600px) {
+  .navbar-logo-img {
+    height: 32px;
+  }
+  .navbar-brand-text {
+    font-size: 1.1rem;
+  }
 }
 
 .navbar-links {
@@ -69,7 +91,7 @@ body {
 .navbar-links li a:focus {
     background: #fff;
     color: #2753a7;
-    box-shadow: 0 2px 6px #22223b22;
+    
     outline: none;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -92,7 +114,7 @@ body {
 }
 @media (max-width: 400px) {
     .nadpis {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 10px;
     }
 }
@@ -259,7 +281,7 @@ br {
   
 }
 /* Responsive styles */
-@media (max-width: 950px) {
+@media (max-width: 1019px) {
   .navbar {
     .navbar {
     padding: 8px 4vw;
@@ -310,6 +332,22 @@ br {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    padding: 8px 4vw;
+    margin: 6px 0;
+    border-radius: 8px;
+  }
+
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+
+  .navbar-links li a {
+    font-size: 0.98rem;
+    padding: 8px 8px;
+  }
+}
+@media (max-width: 915px) {
   .navbar {
     padding: 8px 4vw;
     margin: 6px 0;
@@ -451,7 +489,7 @@ br {
   background: #222;
   z-index: 1;
   border-radius: 18px;
-  box-shadow: 0 4px 24px #0005;
+  
   max-height: 340px;
 }
 
@@ -490,7 +528,7 @@ br {
   padding: 28px 38px 22px 32px;
   margin: 0 0 38px 38px;
   max-width: 480px;
-  box-shadow: 0 4px 32px 0 #0004;
+  
 }
 .hero-caption h1 { font-size: 1.5rem; font-weight: 700; margin: 0 0 8px 0; line-height: 1.1; user-select: none;}
 .hero-caption p { font-size: 0.9rem; margin: 0; user-select: none;}
@@ -643,10 +681,10 @@ br {
 .contact-card {
   background: #fff;
   border-radius: 1.2rem;
-  box-shadow: 0 4px 18px #2c345312;
+  
   padding: 2rem 2rem 1.4rem 2rem;
   margin-bottom: 2.2rem;
-  transition: box-shadow 0.2s;
+ 
   margin-top: 2.2rem;
 }
 
@@ -684,7 +722,7 @@ br {
   min-height: 320px;
   background: #fff;
   border-radius: 1.2rem;
-  box-shadow: 0 4px 18px #2c345312;
+  
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
