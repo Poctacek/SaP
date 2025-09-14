@@ -608,7 +608,6 @@ br {
 .aboutus-list li {
   margin-bottom: 0.8em;
 }
-
 .aboutus-experience {
   font-size: 1.33em;
   color: #fff;
@@ -621,7 +620,15 @@ br {
   border: 1px solid #f3f4fa55;
   font-weight: 600;
   backdrop-filter: blur(2px);
+  cursor: default; /* ukazuje, že to není klikací */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+
+.aboutus-experience:hover {
+  background: rgba(255,255,255,0.25); /* jemně zesvětlené pozadí */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* lehký „pop“ efekt */
+}
+
 
 .aboutus-image {
   border-radius: 2em;
