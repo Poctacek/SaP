@@ -54,6 +54,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 2px;
+  cursor: default;
+  user-select: none;
   /* Remove margin-left if using flex gap */
 }
 @media (max-width: 600px) {
@@ -105,6 +107,8 @@ body {
     letter-spacing: 2px;
     text-align: center;
     margin-top: 20px;
+    user-select: none;
+    cursor: default;
 }
 @media (max-width: 600px) {
     .nadpis {
@@ -609,6 +613,7 @@ br {
   margin-bottom: 0.8em;
 }
 .aboutus-experience {
+  user-select: none;
   font-size: 1.33em;
   color: #fff;
   background: rgba(255,255,255,0.15);
@@ -803,6 +808,8 @@ br {
   margin: 8rem auto 2rem auto;
   max-width: 1200px;
   color: #fff;
+  user-select: none;
+  cursor: default;
 }
 .choose-title {
   font-size: 2rem;
@@ -815,6 +822,8 @@ br {
   gap: 2rem;
   flex-wrap: wrap;
   color: #fff;
+  user-select: none;
+  cursor: default;
 }
 .choose-item {
   flex: 1 1 250px;
@@ -823,15 +832,21 @@ br {
   border-radius: 1rem;
   transition: transform 0.2s ease;
   color: #fff;
+  user-select: none;
+  cursor: default;
 }
 .choose-item:hover {
   transform: translateY(-5px);
+  user-select: none;
+  cursor: default;
 }
 .choose-icon {
   width: 64px;
   height: 64px;
   margin-bottom: 1rem;
   color: #fff;
+  user-select: none;
+  cursor: default;
   
 }
 .choose-item h3 {
@@ -842,6 +857,8 @@ br {
 .choose-item p {
   font-size: 1rem;
   color: #dbe5fa;
+  user-select: none;
+  cursor: default;
 }
 .how-drywall-helps .help-grid {
   gap: 1.5rem;
@@ -911,6 +928,17 @@ hr {
   word-break: normal;
 }
 .footer-address {
+  color: #b1b1b1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: normal;
+}
+.address-link {
+   text-decoration: none;
+  
+  
+  transition: color 0.2s;
   color: #b1b1b1;
   white-space: nowrap;
   overflow: hidden;
