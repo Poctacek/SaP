@@ -34,7 +34,7 @@ The goal is to create a clean, modern, and easy-to-navigate site that presents h
 - Make this into a usable website for everyone
 
 ## Future
-- After sommer of making ends, I want to translate it into Czech and give it to my father for his birthday
+- After summer of making ends, I want to translate it into Czech and give it to my father for his birthday
 - I'll be buying a domain for this too, so it's fully usable
 - Maybe even get some ads or some more promotion
 
