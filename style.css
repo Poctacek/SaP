@@ -283,6 +283,7 @@ br {
   width: 25%;
   height: auto;
   
+  
 }
 /* Responsive styles */
 @media (max-width: 1019px) {
@@ -575,12 +576,20 @@ br {
 }
 
 .aboutus-title {
-  font-weight: 700;
-  font-size: 2.4rem;
-  color: #fff;
-  letter-spacing: -0.5px;
-  margin-bottom: 1.2em;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  color: #ffffff; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #444; 
+  display: inline-block; 
+  padding-bottom: 5px;
 }
+
+
 
 .aboutus-lead {
   font-size: 1.25rem;
@@ -601,13 +610,19 @@ br {
 }
 
 .aboutus-list {
-  list-style: disc inside;
-  color: #dbe5fa;
-  font-size: 1.14rem;
-  line-height: 2.1;
-  margin-bottom: 2rem;
-  padding-left: 1.2em;
+  background: rgba(255,255,255,0.08);
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.2);
 }
+.aboutus-image {
+  transition: transform 0.4s ease;
+}
+.aboutus-image:hover {
+  transform: scale(1.03);
+  
+}
+
 
 .aboutus-list li {
   margin-bottom: 0.8em;
@@ -625,13 +640,13 @@ br {
   border: 1px solid #f3f4fa55;
   font-weight: 600;
   backdrop-filter: blur(2px);
-  cursor: default; /* ukazuje, že to není klikací */
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  transition: background 0.3s ease;
 }
 
 .aboutus-experience:hover {
-  background: rgba(255,255,255,0.25); /* jemně zesvětlené pozadí */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* lehký „pop“ efekt */
+  background: rgba(255,255,255,0.25);
+  
 }
 
 
@@ -875,17 +890,19 @@ br {
 }
 
 .site-footer {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(20, 30, 50, 0.85);
+  backdrop-filter: blur(10px);
   color: #fff;
+  border-top: solid rgba(0,204,255,0.4);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   position: relative;
-  padding: 60px 0 0 0;           /* top padding only, remove bottom padding */
-  margin-top: 20rem;              /* pushes footer to bottom if not enough content */
-  min-height: 250px;             /* optional: controls how tall the footer is */
+  padding: 60px 0 0 0;          
+  margin-top: 20rem;              
+  min-height: 250px;            
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;     /* keeps content toward the bottom of the footer */
+  justify-content: flex-end;     
 }
 
 .footer-content {
