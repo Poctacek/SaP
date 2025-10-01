@@ -962,3 +962,39 @@ hr {
   text-overflow: ellipsis;
   word-break: normal;
 }
+.github-hosting {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.github-text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7); 
+    user-select: none;
+    cursor: default;
+}
+.github-hosting a {
+    display: inline-block;
+}
+.github-hosting a:hover .github-icon {
+   
+  transform: scale(1.12);
+}
+.github-icon {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.github-icon:hover {
+    filter: grayscale(0%); /* barevná při hoveru */
+}
